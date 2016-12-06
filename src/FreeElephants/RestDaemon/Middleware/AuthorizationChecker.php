@@ -1,9 +1,8 @@
 <?php
 
-namespace FreeElephants\RestDaemon;
+namespace FreeElephants\RestDaemon\Middleware;
 
 use Econ\AuthClient\ClientInterface;
-use FreeElephants\RestDaemon\Middleware\MiddlewareInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
