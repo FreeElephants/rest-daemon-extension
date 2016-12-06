@@ -1,5 +1,5 @@
 {
-    "name": "free-elephants/rest-daemon-extension",
+    "name": "free-elephants/econ-rest-daemon-extension",
     "minimum-stability": "dev",
     "prefer-stable": true,
     "authors": [
@@ -15,6 +15,11 @@
         "free-elephants/econ-auth-client": "dev-master",
         "symfony/serializer": "^3.1",
         "symfony/property-access": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "FreeElephants\\RestDaemon\\": "src/FreeElephants/RestDaemon/"
+        }
     },
     "repositories": [
         {
