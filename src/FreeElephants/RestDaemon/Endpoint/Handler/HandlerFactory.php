@@ -3,6 +3,7 @@
 namespace FreeElephants\RestDaemon\Endpoint\Handler;
 
 use FreeElephants\DI\Injector;
+use FreeElephants\RestDaemon\DTO\DTOFactoryInterface;
 use FreeElephants\RestDaemon\Endpoint\EndpointMethodHandlerInterface;
 use FreeElephants\RestDaemon\Serialization\SerializerInterface;
 
@@ -26,7 +27,7 @@ class HandlerFactory implements HandlerFactoryInterface
     {
         /**@var $handler AbstractSerializerAwareHandler */
         $handler = $this->di->createInstance($className);
-        $dtoFactory = $this->di->getService(DTOFactory::class);
+        $dtoFactory = $this->di->getService(DTOFactoryInterface::class);
         $handler->setDTOFactory($dtoFactory);
         $serializer = $this->di->getService(SerializerInterface::class);
         $handler->setSerializer($serializer);
