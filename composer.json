@@ -1,5 +1,5 @@
 {
-    "name": "free-elephants/econ-rest-daemon-extension",
+    "name": "free-elephants/rest-daemon-extension",
     "minimum-stability": "dev",
     "prefer-stable": true,
     "authors": [
@@ -9,10 +9,10 @@
         }
     ],
     "require": {
-        "free-elephants/rest-daemon": "^0.4",
+        "free-elephants/rest-daemon": "^0.5",
         "psr/link": "^1.0",
-        "free-elephants/di": "dev-master",
-        "free-elephants/econ-auth-client": "dev-master",
+        "free-elephants/di": "^1.0",
+        "free-elephants/rest-auth-client": "^0.5",
         "symfony/serializer": "^3.1",
         "symfony/property-access": "^3.1"
     },
@@ -24,19 +24,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "git@github.com:FreeElephants/rest-daemon.git"
-        },
-        {
-            "type": "vcs",
-            "url": "git@github.com:FreeElephants/Ratchet.git"
-        },
-        {
-            "type": "vcs",
-            "url": "git@github.com:FreeElephants/php-di.git"
-        },
-        {
-            "type": "vcs",
-            "url": "git@bitbucket.org:FreeElephants/econ-auth-client.git"
+            "url": "git@bitbucket.org:FreeElephants/rest-auth-client.git"
         }
     ]
 }
